@@ -9,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 public class StringToIntegerConverter implements Converter<String, Integer> {
 
     @Override
-    @Nullable
     public Integer convert(String source) {
         log.error("convert source={}", source);
         return Integer.valueOf(source);

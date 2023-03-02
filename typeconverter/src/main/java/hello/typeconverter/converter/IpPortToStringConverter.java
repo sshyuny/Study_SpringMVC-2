@@ -10,7 +10,6 @@ import org.springframework.lang.Nullable;
 public class IpPortToStringConverter implements Converter<IpPort, String> {
     
     @Override
-    @Nullable
     public String convert(IpPort source) {
         log.info("convert source={}", source);
         //IpPort객체 -> "127.0.0.1:8080"
